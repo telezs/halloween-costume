@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Costume Contest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53a615003b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="assets/Cat with a witch hat-amico.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                <a class="navbar-brand" href="index.html">Costume Contest</a>
+            </div>
+                <ul class="nav ">
+                    <li class="nav-item ">
+                    <a class="nav-link "  href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="submit.html">Submit</a>
+                        </li>
+                         <li class="nav-item">
+                    <a class="nav-link"  href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item" id="res-log">
+                    <a class="nav-link"  href="login.html">Sign Up | Log In</a>
+                    </li>
+                    <li class="nav-item hide" id="userName">
+                        <p ></p>
+                    </li>
+                    <li class="nav-item hide" id="signOut">
+                      <button class="btn btn-primary">Sign Out</button>
+                  </li>
+                </ul>
+          </div>  
+    </nav>
+      <div class="container">
+        <div class="row" style="margin-top: 15vh;">
+            <h1 class="display-2 fw-bold">Submit</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 bg-dark rounded">
+                <img src="" alt="" id="imgCheck" class="img-fluid">
+            </div>
+            <div class="col-sm-5">
+                <form action="#" id="form">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label" >Upload Your Image</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                <label for="exampleDataList" class="form-label">Themes:</label>
+                <input class="form-control" list="datalistOptions" id="themeList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                    <option value="Scary">
+                    <option value="Wholesome">
+                    <option value="Funny">
+                    <option value="Realistic">
+                    <option value="Pop Culture">
+                    <option value="Cosplay">
+                </datalist>
+                    <div class="mb-3">  
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="captionText" rows="3"></textarea>
+                      </div>
+                    <label for="" class="form-label">Chooose Your Category:</label>
+                    <div class="form-check-inline">
+                        <input class="form-check-input category" type="radio" name="exampleRadios" id="solo" value="solo" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Solo
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input category" type="radio" name="exampleRadios" id="duo" value="duo">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Duo
+                    </label>  
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input category" type="radio" name="exampleRadios" id="trio" value="trio" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Trio
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input category" type="radio" name="exampleRadios" id="group" value="group">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Group
+                    </label>  
+                    </div>
+                    <button class="btn btn-primary" type="submit" id="submit">Submit Your Costume</button>
+                </form>
+
+                  
+
+            </div>
+        </div>
+      </div>
+</body>
+<script src="submit.js"></script>
+<script src="main.js"></script>
+</html>
